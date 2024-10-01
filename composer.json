@@ -1,0 +1,27 @@
+{
+    "name": "areanet/gpsr-template",
+    "description": "Template for GPSR",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "AreanetGPSRTemplate\\AreanetGPSRTemplate",
+        "label": {
+            "de-DE": "Template for GPSR",
+            "en-GB": "Template for GPSR"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AreanetGPSRTemplate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AreanetGPSRTemplate\\Tests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{% sw_extends "@Storefront/storefront/component/product/description.html.twig" %}
+
+{% block component_product_description_content_text %}
+    {{ parent() }}
+
+    {% if page.product.manufacturer.customFields.custom_gpsr_manufacturer_contact %}
+        <h3>{{ 'listing.filterManufacturerDisplayName' | trans }}</h3>
+        <div>{{ page.product.manufacturer.customFields.custom_gpsr_manufacturer_contact | raw }}</div>
+    {% endif %}
+{% endblock %}
